@@ -1,0 +1,148 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.main_box {
+
+    background-image: url(photo.jpg);
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.main_box #check {
+    display: none;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left:-600px;
+}
+
+.main_box #check:checked~.sidebar_menu {
+    
+    position: fixed;
+    left: 0px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+
+}
+
+.main_box #check:checked~.btn_one {
+    display: none;
+}
+
+.sidebar_menu {
+    background-color: rgba(128, 128, 128, 0.386);
+    height: 100vh;
+    width: 270px;
+    border: 2px solid grey;
+    box-shadow: 0px 0px 1px white;
+    position: absolute;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.142)
+
+}
+
+.sidebar_menu .logo {
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 1px white;
+
+}
+
+.sidebar_menu .logo a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+}
+
+.btn_one {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.btn_two {
+    position: absolute;
+    top: 10px;
+
+}
+.sidebar_menu .menu ul li a{
+    text-decoration: none;
+    color: white;
+} 
+.sidebar_menu .menu{
+    width: 100%;
+    line-height: 70px;
+
+}
+
+ul li{
+    list-style: none;
+    color: white;
+    padding-left: 10px;
+    
+    
+}
+
+ul li:hover{
+    box-shadow: 0px 0px 1px white;
+
+}
+
+.main_box .sidebar_menu .btn_two{
+    position: absolute;
+    top: 12px;
+    left: 240px;
+}
+
+.main_box .sidebar_menu .btn_two i:hover{
+font-size: 30px;
+transform: 0.3s;
+}
+
+.main_box .sidebar_menu .btn_two i 
+{
+    font-size: 25px;
+}
+
+.main_box .btn_one{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.main_box .btn_one i{
+    font-size: 30px;
+}
+
+.btn_two label:hover{
+    cursor: pointer;
+}
+
+.btn_one label:hover{
+    cursor: pointer;
+}
+
+.sidebar_menu .social_media{
+  position: absolute;
+  bottom: 8px;
+  left:70px;
+
+}
+.sidebar_menu .social_media i{
+    color: rgba(255, 255, 255, 0.352);
+}
+.sidebar_menu .social_media i:hover{
+font-size:30px ;
+transition-duration: 0.3s;
+}
